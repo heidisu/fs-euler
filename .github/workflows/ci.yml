@@ -1,0 +1,20 @@
+name: Build, check and test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.x.x'
+      - run: dotnet build
+      - name: Fantomas check
+        run: dotnet fantomas --check .
+      - name: Run tests
+        run: dotnet test
