@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.x.x'
+      - run: dotnet tool restore
       - run: dotnet build
       - name: Fantomas check
         run: dotnet fantomas --check .
