@@ -16,7 +16,8 @@ let main _ =
       P004.solution
       P005.solution
       P006.solution
-      P007.solution ]
+      P007.solution
+      P008.solution ]
     |> List.iter (fun solution -> printfn $"Problem {solution.number}: {getValue solution.value}")
 
     0

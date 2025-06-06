@@ -33,3 +33,7 @@ let ``P006 sum square difference of ten first digits`` () =
 
 [<Fact>]
 let ``P007 6th prime is 13`` () = Assert.Equal(13, P007.nthPrime 6)
+
+[<Fact>]
+let ``P008 largest product of 4 adjacent digits`` () =
+    Assert.Equal(5832L, P008.biggestAdjacentProduct 4)
