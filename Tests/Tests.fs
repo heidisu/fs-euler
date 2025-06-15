@@ -37,3 +37,7 @@ let ``P007 6th prime is 13`` () = Assert.Equal(13, P007.nthPrime 6)
 [<Fact>]
 let ``P008 largest product of 4 adjacent digits`` () =
     Assert.Equal(5832L, P008.biggestAdjacentProduct 4)
+
+[<Fact>]
+let ``P009`` () =
+    Assert.Equal(60, P009.specialPythagoreanTriplets 12)
