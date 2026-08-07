@@ -8,7 +8,7 @@ let specialPythagoreanTriplets n =
     digits
     |> Seq.collect (fun a ->
         seq { a + 1 .. n }
-        |> Seq.collect (fun b -> { b + 1 .. n } |> Seq.map (fun c -> (a, b, c))))
+        |> Seq.collect (fun b -> seq { b + 1 .. n } |> Seq.map (fun c -> (a, b, c))))
     |> Seq.find (fun (a, b, c) -> a + b + c = n && a * a + b * b = c * c)
     |> fun (a, b, c) -> a * b * c
 
