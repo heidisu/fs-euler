@@ -39,5 +39,8 @@ let ``P008 largest product of 4 adjacent digits`` () =
     Assert.Equal(5832L, P008.biggestAdjacentProduct 4)
 
 [<Fact>]
-let ``P009`` () =
+let ``P009 special pythagorean triplets`` () =
     Assert.Equal(60, P009.specialPythagoreanTriplets 12)
+
+[<Fact>]
+let ``P010 sum of primes below 10`` () = Assert.Equal(17L, P010.primeSum2 10L)
