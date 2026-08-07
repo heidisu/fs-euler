@@ -20,7 +20,8 @@ let main _ =
         P007.solution
         P008.solution
         P009.solution
-        P010.solution
+        //P010.solution Very slow
+        P011.solution
     }
     |> Seq.iter (fun solution -> printfn $"Problem {solution.number}: {getValue solution.value}")
 

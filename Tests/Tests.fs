@@ -44,3 +44,16 @@ let ``P009 special pythagorean triplets`` () =
 
 [<Fact>]
 let ``P010 sum of primes below 10`` () = Assert.Equal(17L, P010.primeSum2 10L)
+
+
+[<Fact>]
+let ``P011 max neighbour quartett`` () =
+    let grid =
+        """
+14 02 03 04
+05 15 07 08
+09 10 11 12
+13 01 06 16
+"""
+
+    Assert.Equal(36960, P011.maxProduct grid)

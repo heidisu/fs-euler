@@ -18,6 +18,7 @@
         <Compile Include="P008.fs" />
         <Compile Include="P009.fs" />
         <Compile Include="P010.fs" />
+        <Compile Include="P011.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 </Project>
