@@ -57,3 +57,13 @@ let ``P011 max neighbour quartett`` () =
 """
 
     Assert.Equal(36960, P011.maxProduct grid)
+
+[<Fact>]
+let ``P013 first ten digits of sum`` () =
+    let numbers =
+        """
+1231231234
+2312312311
+"""
+
+    Assert.Equal(3543543545L, P013.firstDigitsOfSum numbers)
