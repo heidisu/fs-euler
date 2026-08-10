@@ -67,3 +67,11 @@ let ``P013 first ten digits of sum`` () =
 """
 
     Assert.Equal(3543543545L, P013.firstDigitsOfSum numbers)
+
+[<Fact>]
+let ``P014 collatzSequenceLength of 13 = 10`` () =
+    Assert.Equal(10L, P014.collatzSequenceLength 13L 0L 13L)
+
+[<Fact>]
+let ``P014 number under 100 with max sequence number`` () =
+    Assert.Equal(97L, P014.maxSequenceLength 100L)
