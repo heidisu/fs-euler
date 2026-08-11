@@ -75,3 +75,7 @@ let ``P014 collatzSequenceLength of 13 = 10`` () =
 [<Fact>]
 let ``P014 number under 100 with max sequence number`` () =
     Assert.Equal(97L, P014.maxSequenceLength 100L)
+
+[<Fact>]
+let ``P015 number of paths in 2 x 2 grid equals 6`` () =
+    Assert.Equal(6L, P015.betterSearch 2 4 [ (0, 0), 1L ])
