@@ -23,6 +23,7 @@
         <Compile Include="P014.fs" />
         <Compile Include="P015.fs" />
         <Compile Include="P016.fs" />
+        <Compile Include="P017.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>
 </Project>
