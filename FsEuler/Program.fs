@@ -7,6 +7,7 @@ let getValue value =
     match value with
     | Int i -> string i
     | Int64 i -> string i
+    | BigInt i -> string i
 
 [<EntryPoint>]
 let main _ =
@@ -25,6 +26,7 @@ let main _ =
         P013.solution
         P014.solution
         P015.solution
+        P016.solution
     }
     |> Seq.iter (fun solution -> printfn $"Problem {solution.number}: {getValue solution.value}")
 

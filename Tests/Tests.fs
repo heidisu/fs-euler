@@ -79,3 +79,7 @@ let ``P014 number under 100 with max sequence number`` () =
 [<Fact>]
 let ``P015 number of paths in 2 x 2 grid equals 6`` () =
     Assert.Equal(6L, P015.betterSearch 2 4 [ (0, 0), 1L ])
+
+[<Fact>]
+let ``P016 sum of digits`` () =
+    Assert.Equal(26I, P016.sumOfDigits 0I (pown 2I 15))
