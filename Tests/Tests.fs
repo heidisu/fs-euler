@@ -83,3 +83,10 @@ let ``P015 number of paths in 2 x 2 grid equals 6`` () =
 [<Fact>]
 let ``P016 sum of digits`` () =
     Assert.Equal(26I, P016.sumOfDigits 0I (pown 2I 15))
+
+[<Fact>]
+let ``P017 number to word`` () =
+    Assert.Equal("threehundredandfortytwo", P017.numberToWord "" 342)
+
+[<Fact>]
+let ``P017 letterCount`` () = Assert.Equal(19, P017.letterCount 5)
