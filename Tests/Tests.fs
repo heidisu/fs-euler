@@ -90,3 +90,17 @@ let ``P017 number to word`` () =
 
 [<Fact>]
 let ``P017 letterCount`` () = Assert.Equal(19, P017.letterCount 5)
+
+
+let testdata =
+    """
+3
+7 4
+2 4 6
+8 5 9 3
+"""
+
+[<Fact>]
+let ``P018 find max path`` () =
+    let data = P018.parse testdata
+    Assert.Equal(P018.findMax data data[0] 1, 23)
