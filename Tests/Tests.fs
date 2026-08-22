@@ -104,3 +104,8 @@ let testdata =
 let ``P018 find max path`` () =
     let data = P018.parse testdata
     Assert.Equal(P018.findMax data data[0] 1, 23)
+
+[<Fact>]
+
+let ``P026 number spiral diagonals`` () =
+    Assert.Equal(101, P028.numberSpiralDiagonal 5)
