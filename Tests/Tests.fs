@@ -106,6 +106,8 @@ let ``P018 find max path`` () =
     Assert.Equal(P018.findMax data data[0] 1, 23)
 
 [<Fact>]
-
-let ``P026 number spiral diagonals`` () =
+let ``P028 number spiral diagonals`` () =
     Assert.Equal(101, P028.numberSpiralDiagonal 5)
+
+[<Fact>]
+let ``P036 double palindrom`` () = Assert.True(P036.isDoublePalidrome 585)
