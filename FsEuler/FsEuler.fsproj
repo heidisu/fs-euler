@@ -27,6 +27,7 @@
         <Compile Include="P018.fs" />
         <Compile Include="P028.fs" />
         <Compile Include="P036.fs" />
+        <Compile Include="P045.fs" />
         <Compile Include="P067.fs" />
         <Compile Include="Program.fs"/>
     </ItemGroup>

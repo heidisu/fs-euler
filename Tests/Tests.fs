@@ -111,3 +111,7 @@ let ``P028 number spiral diagonals`` () =
 
 [<Fact>]
 let ``P036 double palindrom`` () = Assert.True(P036.isDoublePalidrome 585)
+
+[<Fact>]
+let ``P045 number sequence`` () =
+    Assert.Equal(40755L, P045.solve 2L 2L 2L)

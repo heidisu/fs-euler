@@ -31,6 +31,7 @@ let main _ =
         P018.solution
         P028.solution
         P036.solution
+        P045.solution
         P067.solution
     }
     |> Seq.iter (fun solution -> printfn $"Problem {solution.number}: {getValue solution.value}")
